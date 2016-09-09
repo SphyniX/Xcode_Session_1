@@ -54,14 +54,22 @@
 		CE0DEE5D1D826BE800AEE59A /* Xcode_Session_1 */ = {
 			isa = PBXGroup;
 			children = (
-				CE0DEE5E1D826BE800AEE59A /* AppDelegate.swift */,
+				CE1F023F1D826F27006D47AA /* Supporting Files */,
 				CE0DEE601D826BE800AEE59A /* ViewController.swift */,
 				CE0DEE621D826BE800AEE59A /* Main.storyboard */,
+			);
+			path = Xcode_Session_1;
+			sourceTree = "<group>";
+		};
+		CE1F023F1D826F27006D47AA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CE0DEE5E1D826BE800AEE59A /* AppDelegate.swift */,
 				CE0DEE651D826BE800AEE59A /* Assets.xcassets */,
 				CE0DEE671D826BE800AEE59A /* LaunchScreen.storyboard */,
 				CE0DEE6A1D826BE800AEE59A /* Info.plist */,
 			);
-			path = Xcode_Session_1;
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +104,7 @@
 				TargetAttributes = {
 					CE0DEE5A1D826BE800AEE59A = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 57876KQ2N3;
 					};
 				};
 			};
@@ -249,6 +258,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Xcode_Session_1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "SphyniX.Xcode-Session-1";
@@ -260,6 +270,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Xcode_Session_1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "SphyniX.Xcode-Session-1";
@@ -286,6 +297,7 @@
 				CE0DEE6F1D826BE800AEE59A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
