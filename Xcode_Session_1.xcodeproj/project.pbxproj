@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D8167321D83B91800EBE3C2 /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8167311D83B91800EBE3C2 /* CalculatorBrain.swift */; };
 		CE0DEE5F1D826BE800AEE59A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0DEE5E1D826BE800AEE59A /* AppDelegate.swift */; };
 		CE0DEE611D826BE800AEE59A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0DEE601D826BE800AEE59A /* ViewController.swift */; };
 		CE0DEE641D826BE800AEE59A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE0DEE621D826BE800AEE59A /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D8167311D83B91800EBE3C2 /* CalculatorBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorBrain.swift; sourceTree = "<group>"; };
 		CE0DEE5B1D826BE800AEE59A /* Xcode_Session_1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Xcode_Session_1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE0DEE5E1D826BE800AEE59A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE0DEE601D826BE800AEE59A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			children = (
 				CE1F023F1D826F27006D47AA /* Supporting Files */,
 				CE0DEE601D826BE800AEE59A /* ViewController.swift */,
+				0D8167311D83B91800EBE3C2 /* CalculatorBrain.swift */,
 				CE0DEE621D826BE800AEE59A /* Main.storyboard */,
 			);
 			path = Xcode_Session_1;
@@ -144,6 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D8167321D83B91800EBE3C2 /* CalculatorBrain.swift in Sources */,
 				CE0DEE611D826BE800AEE59A /* ViewController.swift in Sources */,
 				CE0DEE5F1D826BE800AEE59A /* AppDelegate.swift in Sources */,
 			);
@@ -260,6 +264,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Xcode_Session_1/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "SphyniX.Xcode-Session-1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -272,6 +277,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Xcode_Session_1/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "SphyniX.Xcode-Session-1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
