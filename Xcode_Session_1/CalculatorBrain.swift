@@ -13,6 +13,10 @@ class CalculatorBrain {
     
     private var accumulator = 0.0
     
+    private var usingReturnHistoryReslut = ""
+    
+    private var clearFlog = false
+    
     func setOperand(operand : Double){
     
         accumulator = operand
@@ -43,7 +47,15 @@ class CalculatorBrain {
     
     }
     
-   
+    func showOperationHistory(symbol : String,history : String){
+        print(symbol)
+        if clearFlog{
+            usingReturnHistoryReslut = symbol
+        }else{
+            usingReturnHistoryReslut = history + symbol
+        }
+        clearFlog = false
+    }
     
     func performOperation(symbol : String){
         
@@ -55,6 +67,7 @@ class CalculatorBrain {
                 executPendingBinaryOperation()
                 Pending = PendingBinaryOperationInfo(binaryFunction: function, fristOperand: accumulator)
             case .Equals :
+                clearFlog = true
                 executPendingBinaryOperation()
             }
         }
@@ -81,6 +94,13 @@ class CalculatorBrain {
             return accumulator
         }
     
+    }
+    
+    var historyResult : String{
+    
+        get{
+            return usingReturnHistoryReslut
+        }
     }
     
 }

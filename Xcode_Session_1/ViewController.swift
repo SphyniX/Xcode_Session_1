@@ -14,16 +14,27 @@ class ViewController: UIViewController {
     
     private var  userIsInTheMiddleOfTyping  = false
     
+    @IBOutlet weak var displayHistory: UILabel!
     
     @IBAction private func touchDigit(sender: UIButton  )  {
-                    let digit  = sender.currentTitle!
-        if userIsInTheMiddleOfTyping   {
-                    let textCurrentlyInDisplay = display!.text!
-                    display!.text = textCurrentlyInDisplay + digit
-        }else{
-                    display.text = digit
-        }
         
+        let digit  = sender.currentTitle!
+        
+        if userIsInTheMiddleOfTyping   {
+            
+            let textCurrentlyInDisplay = display!.text!
+            display!.text = textCurrentlyInDisplay + digit
+            
+            }else{
+            
+            display.text = digit
+            
+            
+        }
+        if let historyOnDispaly = displayHistory.text{
+            brain.showOperationHistory(digit, history: historyOnDispaly)
+        }
+        displayHistory.text = brain.historyResult
         userIsInTheMiddleOfTyping = true
             
         }
@@ -50,8 +61,12 @@ class ViewController: UIViewController {
             userIsInTheMiddleOfTyping = false
         }
         if let mathmaticalSymbol = sender.currentTitle{
-            brain.performOperation(mathmaticalSymbol)
             
+            if let historyOnDispaly = displayHistory.text{
+                brain.showOperationHistory(mathmaticalSymbol, history: historyOnDispaly)
+            }
+            brain.performOperation(mathmaticalSymbol)
+           
             
            // -----
 //            if mathmaticalSymbol == "π"{
@@ -62,6 +77,7 @@ class ViewController: UIViewController {
 //            }
         }
         displayValue = brain.result
+        displayHistory.text = brain.historyResult
     }
 
 
